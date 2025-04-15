@@ -99,15 +99,13 @@ class Bot(Client):
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/weebs_support")
-        self.LOGGER(__name__).info(f"""       
-
+        self.LOGGER(__name__).info(r"""       
 
   ___ ___  ___  ___ ___ _    _____  _____  ___ _____ ___ 
  / __/ _ \|   \| __| __| |  |_ _\ \/ / _ )/ _ \_   _/ __|
 | (_| (_) | |) | _|| _|| |__ | | >  <| _ \ (_) || | \__ \
  \___\___/|___/|___|_| |____|___/_/\_\___/\___/ |_| |___/
                                                          
- 
                                           """)
 
         self.set_parse_mode(ParseMode.HTML)
@@ -119,9 +117,10 @@ class Bot(Client):
         await app.setup()
         await web.TCPSite(app, "0.0.0.0", PORT).start()
 
-
-        try: await self.send_message(OWNER_ID, text = f"<b><blockquote>- Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @Codeflix_Bots</blockquote></b>")
-        except: pass
+        try:
+            await self.send_message(OWNER_ID, text = f"<b><blockquote>- Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @RexySama</blockquote></b>")
+        except:
+            pass
 
     async def stop(self, *args):
         await super().stop()
