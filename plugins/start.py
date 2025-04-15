@@ -178,11 +178,11 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                    [InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/Nova_Flix/50")],
+                    [InlineKeyboardButton("Mᴏʀᴇ ᴄʜᴀɴɴᴇʟs", url="https://t.me/Nova_Flix/50")],
 
     [
-                    InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('ʜᴇʟᴘ •', callback_data = "help")
+                    InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data = "about"),
+                    InlineKeyboardButton('Hᴇʟᴘ', callback_data = "help")
 
     ]
             ]
