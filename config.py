@@ -20,7 +20,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1416841137"))
 #Port
 PORT = os.environ.get("PORT", "8030")
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Wrio:solo123cluster@cluster0.cockran.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Wrio:TWmfbZA0vF5YvdaN@cluster0.cockran.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "Wrio")
 
 #Time in seconds for message delete, put 0 to never delete
