@@ -1,11 +1,3 @@
-#
-# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
-#
-# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
-# and is released under the MIT License.
-# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
-#
-# All rights reserved.
 
 from pyrogram import Client 
 from bot import Bot
@@ -41,14 +33,17 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             )
         )
     elif data == "start":
-        await query.message.edit_text(
-            text=START_MSG.format(first=query.from_user.first_name),
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("Hᴇʟᴘ", callback_data='help'),
-                 InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data='about')]
-            ])
-        )
+    await query.message.edit_text(
+        text=START_MSG.format(first=query.from_user.first_name),
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("Nᴇᴡ Bᴜᴛᴛᴏɴ", callback_data='new_button')],
+            [
+                InlineKeyboardButton("Hᴇʟᴘ", callback_data='help'),
+                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data='about')
+            ]
+        ])
+    )
     
     elif data == "close":
         await query.message.delete()
